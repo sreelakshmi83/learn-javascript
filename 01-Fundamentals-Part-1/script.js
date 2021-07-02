@@ -1,4 +1,5 @@
 ////////*linking a file*/////////
+//////////////////////////////////////
 let js="amazing";
 /*if (js="amazing") alert ("js is amazing");*/
   console.log("great js");
@@ -6,7 +7,7 @@ let js="amazing";
   console.log(2+3+4+5);
 
  /////////* values and variables*//////////
-
+//////////////////////////////////////////////
 /*value is a piece of  data it is the most fundamental unit of information
 that we have in programming;*/
 
@@ -50,9 +51,9 @@ console.log(myFirstJob);
 
 
 /*in overall a variable is a box and here it is  named as myFirstJob  and we can put any value in it (here it is programmer) and can reuse the variable in the code as many times as we want*/
-
-// datatypes
-
+/////////////////////////////////////////////////
+// Datatypes
+/////////////////////////////////////////////
 let javascriptIsFun = true ;/*here variable javascriptIsFun)is holding the boolean value(true). wes hould remember that value holds the datatype(here boolean) and not variable*/
 console.log(javascriptIsFun);
 
@@ -91,10 +92,10 @@ console.log(job);
 lastName="lakshmi";
 console.log(lastName); /* not declared either let, const,var so it will not create a variable in the current so called scope  */
                        /* Instead javascript will create a property on the gobal object*/
-                       
- //basic operators
+ /////////////////////////////////////////////////                      
+ //Basic operators
  //math opeartors
-
+///////////////////////////////////////////////
 const now=2037
  const ageSree=now-1991;       /* subtraction operator*/
  const ageLakshmi=now-2018;
@@ -107,9 +108,9 @@ const lastName1="lakshmi";
 console.log(firstName1+' '+lastName1); /*concatenation means adding two strings here firstname is replaced with sree and lastname is replaced with lakshmi. therefore the output sree lakshmi and '' gives space between firstname and lastname*/
 
 console.log(typeof  firstName1);/* typeof  operator gives us type of value (here firstname is string) */
-
-//assignment operators//
-
+/////////////////////////////////
+//Assignment operators//
+//////////////////////////////////
 let x=10+5;//15
 x+=10;//x=x+10 ;x=15+10=25;
 x*=4;//x=x*4; x=25*4=100;
@@ -117,9 +118,9 @@ x++;//x=x+1; x=100+1=101;
 x--;//x=x-1; x=101-1=100;
 x--;//x=x-1; x=100-1=99;*/
 console.log(x); // gives 99 as output
-
-//comparision operators//
-
+/////////////////////////////////////
+//Comparision operators//
+///////////////////////////////////////
 console.log(ageSree > ageLakshmi);//<,>,>=,<= gives a boolean value (ie., true or false)
 console.log(ageLakshmi >= 20); /* testing lakshmi is 18 yearsie., fullage or not 
                                in real time we store these results in the variable */
@@ -177,9 +178,9 @@ const johnBMI1=85/(1.76*1.76);
 
 const markhigherBMI1=(markBMI1>johnBMI1);
 console.log( markBMI1, johnBMI1, markhigherBMI1);
-
-//strings and template literals//
-
+/////////////////////////////////////////////////
+//Strings and Template literals//
+///////////////////////////////////////////////////
 const firstName2='sreelakshmi'; 
 const job3='teacher'; // we are creating the variables(,firstname, job,birthyear) about the person and then concatenating into a big string*/
 const birthYear1=1991; //here we can miss the spaces , quotation marks and so on and diffficult to write the code so avoid this we use templae literals// 
@@ -202,9 +203,9 @@ console.log(sree1); // for eg: we use backticks so there is no need to worry abo
   good string.....
   not using slash n here `);
 
-
+///////////////////////////////////////
   //if-else
-
+//---------------------------//
   const age3=19;
   const isOldEnough=age3>=18;// using th boolean value and only using if statement//
   if(isOldEnough){
@@ -296,11 +297,12 @@ if(markBMI2> johnBMI2)
 }
 
 
-
+//////////////////////////////////////////////////////////////////
 //Type conversion and Type coercion 
 //typeconversion : we explicitly convert from one type to another.
 //type coercion: javascript converts from to one type to another implicitly.
 // type conversion
+//------------------------------------------//
 const inputYear='1991'; //1991 is a string bcos marked in quotation marks//
 
 console.log(Number(inputYear),inputYear);// Number()function will convert string into a number ie., numbers which are written into string eg:'12'//
@@ -309,9 +311,9 @@ console.log(String(23),23);// String()Function will convert number into a string
 
 console.log(Number('sree')); //number()function will not convert the string(here it is 'sree') into number. it gives error called Nan- not anumber//
 console.log(typeof Nan);
-
+////////////////////////////////////////////////////
 //type coercion
-
+//-----------------------------------------------//
 console.log('I am '+ 23 +' year old'); // 23 is converted into number automatically using coercion//
 console.log('I am '+String(23)+ 'year old');// converting the number 23 into string manually using the String() function//
 console.log('23'/2); // it supports subtraction,division, multiplication, greaterand so on. it will convert string to number and number to string when ever it wants.//
@@ -323,10 +325,10 @@ console.log('10'-'5');
 console.log('2'+'4'+5);// output is 245 : 2 and 5 are strings can be added as 24 and 5 is number it is added as 245 
 console.log(2+3+4+'5');// 95 : numbers are added and then string is added ie., 2+3+4=9 and 5 is added =95
 
-
+/////////////////////////////////////////////////////////////////////////////
 //  falsy values: 0,null ,undefined,Nan,'' (emptystring)
 // falsy values will becomefalse when we try to convert into a boolean.
-
+//////////////////////////////////////////////////////////////////////////
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('sree'));
@@ -398,7 +400,7 @@ if (age6==18)
  const favourite1=Number(prompt("what is your favourite1 number")); // now we have written the number() function so the string will be converted to the number//
  console.log(favourite1);
  console.log(typeof favourite1);
- if (favourite1===2
+ if (favourite1===23)
  {
    console.log('23 is cool number');
  } else if(favourite1===7)
@@ -412,4 +414,6 @@ if (age6==18)
  {
    console.log('23, 9,7 are not cool numbers');
  }
-
+///////opposite of equal operator is Not equal to operator(_!==)/////////////
+ if(favourite1!==23)
+ console.log("why not 23?")
