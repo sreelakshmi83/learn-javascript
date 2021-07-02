@@ -350,7 +350,66 @@ console.log('yay defined the height');
 }else{
   console.log('height is not defined');
  }
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Equality  operators//
+// when we take decisions we use if else//
+// when we  want to check whether two values are equal or not we use equality operator//
 
+const age6=18;//18 is a number//
+if (age6==18)
+{
+  console.log("you just became the adult"); // loose operator//
+}
+ if (age6===18)
+ {
+   console.log("you became the adult");// strict operator//
+ }
+
+ const age7='18';// 18 is a string//
+ if (age7==18)
+ {
+   console.log("you just became the adult"); // loose operator. here the string is converted into anumber (typecoercion is done implicitly)//
+ }
+  if (age7===18)
+  {
+    console.log("you became the adult");// strict operator here in === typecoercion is not accepted so string!=number//
+  }                                     // we should always prefered to use strict operator than loose operator//
  
+ const favourite= prompt("what is your favourite number"); // whatever we give the value ,value will be a string//
+ console.log(favourite); 
+ console.log(typeof favourite);
 
+  
+ if (favourite===23)  
+ {
+   console.log('23 is cool number');
+ } else if(favourite===7)
+ {
+   console.log('7 is also cool number');
+ } 
+  else if (favourite===9)
+ {
+   console.log(' 9  is cool number');
+ }else
+ {
+   console.log('23, 9,7 are not cool numbers');
+ }
+
+ const favourite1=Number(prompt("what is your favourite1 number")); // now we have written the number() function so the string will be converted to the number//
+ console.log(favourite1);
+ console.log(typeof favourite1);
+ if (favourite1===2
+ {
+   console.log('23 is cool number');
+ } else if(favourite1===7)
+ {
+   console.log('7 is also cool number');
+ } 
+  else if (favourite1===9)
+ {
+   console.log(' 9  is cool number');
+ }else
+ {
+   console.log('23, 9,7 are not cool numbers');
+ }
 
