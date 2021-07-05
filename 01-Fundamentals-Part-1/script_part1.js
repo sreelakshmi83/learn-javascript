@@ -232,7 +232,8 @@ console.log(`he belongs to 20th century`);
 {
   console.log(`he belongs to 21 century`);
 }
-                      
+  
+/*
 const birthYear5= 2015;
 let century;                    //using without  console.log in the if block and else block and declaring the console.log outside the blocks.//
 if (birthYear5 <= 2000)   // whatever variable is declared inside the block is not acessible out side the block so we must declare the variable out the block//
@@ -243,7 +244,7 @@ if (birthYear5 <= 2000)   // whatever variable is declared inside the block is n
   century=21;
 }
 console.log(century);
-
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Coding Challenge #2
@@ -260,6 +261,7 @@ HINT: Use an if/else statement 😉
 
 GOOD LUCK 😀
 */
+/*
 const massMark= 78;
 const heightMark=1.69;
 const massJohnweight=92;
@@ -295,7 +297,7 @@ if(markBMI2> johnBMI2)
 } else{
   console.log(`john's BMI (${johnBMI2})  is higher than mark's ( ${markBMI2})` );
 }
-
+*/
 
 //////////////////////////////////////////////////////////////////
 //Type conversion and Type coercion 
@@ -303,6 +305,8 @@ if(markBMI2> johnBMI2)
 //type coercion: javascript converts from to one type to another implicitly.
 // type conversion
 //------------------------------------------//
+/*
+
 const inputYear='1991'; //1991 is a string bcos marked in quotation marks//
 
 console.log(Number(inputYear),inputYear);// Number()function will convert string into a number ie., numbers which are written into string eg:'12'//
@@ -311,10 +315,14 @@ console.log(String(23),23);// String()Function will convert number into a string
 
 console.log(Number('sree')); //number()function will not convert the string(here it is 'sree') into number. it gives error called Nan- not anumber//
 console.log(typeof Nan);
+
+*/
+
+
 ////////////////////////////////////////////////////
 //type coercion
 //-----------------------------------------------//
-console.log('I am '+ 23 +' year old'); // 23 is converted into number automatically using coercion//
+/*console.log('I am '+ 23 +' year old'); // 23 is converted into number automatically using coercion//
 console.log('I am '+String(23)+ 'year old');// converting the number 23 into string manually using the String() function//
 console.log('23'/2); // it supports subtraction,division, multiplication, greaterand so on. it will convert string to number and number to string when ever it wants.//
 
@@ -324,20 +332,23 @@ console.log('2'+'3'+2);
 console.log('10'-'5');
 console.log('2'+'4'+5);// output is 245 : 2 and 5 are strings can be added as 24 and 5 is number it is added as 245 
 console.log(2+3+4+'5');// 95 : numbers are added and then string is added ie., 2+3+4=9 and 5 is added =95
+*/
+
+
 
 /////////////////////////////////////////////////////////////////////////////
 //  falsy values: 0,null ,undefined,Nan,'' (emptystring)
 // falsy values will becomefalse when we try to convert into a boolean.
 //////////////////////////////////////////////////////////////////////////
-console.log(Boolean(0));
+/*console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('sree'));
 console.log(Boolean({}));
-
+*/
 //the conversion to boolean is always done  implicit or  we can say typed coercion that javascript does automatically behind the scenes.//
 //javascript do typecoercion to booleans in 2 scenarios1) using logical operators//
 //2)logical context for eg in the condition of if-else statement//
-
+/*
 const money=0;
 if (money){                // money in the if statement will convert 0 into the boolean(true or false) and execute the if -else statemnents//
 console.log("don't spend money");
@@ -352,11 +363,15 @@ console.log('yay defined the height');
 }else{
   console.log('height is not defined');
  }
-//////////////////////////////////////////////////////////////////////////////////////////////////
+
+ */
+
+ //////////////////////////////////////////////////////////////////////////////////////////////////
 // Equality  operators//
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // when we take decisions we use if else//
 // when we  want to check whether two values are equal or not we use equality operator//
-
+/*
 const age6=18;//18 is a number//
 if (age6==18)
 {
@@ -376,7 +391,10 @@ if (age6==18)
   {
     console.log("you became the adult");// strict operator here in === typecoercion is not accepted so string!=number//
   }                                     // we should always prefered to use strict operator than loose operator//
- 
+
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////
+  /* 
  const favourite= prompt("what is your favourite number"); // whatever we give the value ,value will be a string//
  console.log(favourite); 
  console.log(typeof favourite);
@@ -395,4 +413,33 @@ if (age6==18)
  }else
  {
    console.log('23, 9,7 are not cool numbers');
+ }
+
+*/
+
+////////////////////////////////////////////////////////////
+/*
+ const favourite1=Number(prompt("what is your favourite1 number")); // now we have written the number() function so the string will be converted to the number//
+ console.log(favourite1);
+ console.log(typeof favourite1);
+ if (favourite1===23)
+ {
+   console.log('23 is cool number');
+ } else if(favourite1===7)
+ {
+   console.log('7 is also cool number');
  } 
+  else if (favourite1===9)
+ {
+   console.log(' 9  is cool number');
+ }else
+ {
+   console.log('23, 9,7 are not cool numbers');
+ }
+///////opposite of equal operator is Not equal to operator(!==)/////////////
+ if(favourite1!==23)  
+ console.log("why not 23?")
+*/
+
+
+
